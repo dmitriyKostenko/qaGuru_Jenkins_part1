@@ -3,9 +3,6 @@ plugins {
     id 'io.qameta.allure' version '2.11.2'
 }
 
-group = "ru.java.automation"
-version = "1.0-SNAPSHOT"
-
 repositories {
     mavenCentral()
 }
@@ -29,10 +26,12 @@ allure {
 
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:6.19.1",
+            "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "org.junit.jupiter:junit-jupiter:5.10.0",
-            'org.slf4j:slf4j-simple:2.0.7'
+            'org.slf4j:slf4j-simple:2.0.7',
+            'org.aspectj:aspectjrt:1.9.22',
+            'org.aspectj:aspectjweaver:1.9.22'
     )
 }
 
