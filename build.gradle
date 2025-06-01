@@ -28,7 +28,8 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:5.10.0",
             'org.slf4j:slf4j-simple:2.0.7',
             'org.aspectj:aspectjrt:1.9.22',
-            'org.aspectj:aspectjweaver:1.9.22'
+            'org.aspectj:aspectjweaver:1.9.22',
+            'io.github.bonigarcia:webdrivermanager:5.8.0'
     )
 }
 
